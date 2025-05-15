@@ -1,0 +1,10 @@
+site_name: Workflow Hub
+nav:
+  - Home: index.md
+theme: 
+   name: mkdocs
+   language: ru
+   features:
+     - content.code.annotate
+     - content.code.copy
+     - content.code.link
