@@ -53,41 +53,41 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#pull-request-arc" class="nav-link">Инструкция по внесению изменений в файлы и созданию Pull Request в Arc</a>
+            <li class="nav-item" data-bs-level="1"><a href="#pull-request" class="nav-link">Инструкция по внесению изменений в файлы и созданию Pull Request</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#1" class="nav-link">1.Обновите локальный репозиторий</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#2" class="nav-link">2.Создайте новую ветку</a>
+            <li class="nav-item" data-bs-level="2"><a href="#1" class="nav-link">1. Обновите локальный репозиторий</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#3" class="nav-link">3.Переключитесь на созданную ветку</a>
+            <li class="nav-item" data-bs-level="2"><a href="#2" class="nav-link">2. Создайте новую ветку</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#4" class="nav-link">4.Внесите изменения</a>
+            <li class="nav-item" data-bs-level="2"><a href="#3" class="nav-link">3. Переключитесь на созданную ветку</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#5" class="nav-link">5.Добавьте изменённые файлы в индекс</a>
+            <li class="nav-item" data-bs-level="2"><a href="#4" class="nav-link">4. Внесите изменения</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#6" class="nav-link">6.Создайте коммит</a>
+            <li class="nav-item" data-bs-level="2"><a href="#5" class="nav-link">5. Добавьте изменённые файлы в индекс</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#7" class="nav-link">7.Отправьте ветку на удалённый репозиторий</a>
+            <li class="nav-item" data-bs-level="2"><a href="#6" class="nav-link">6. Создайте коммит</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#8-pull-request" class="nav-link">8.Создайте Pull Request</a>
+            <li class="nav-item" data-bs-level="2"><a href="#7" class="nav-link">7. Отправьте ветку на удалённый репозиторий</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#9-pull-request" class="nav-link">9.*Проверьте созданный Pull Request</a>
+            <li class="nav-item" data-bs-level="2"><a href="#8-pull-request" class="nav-link">8. Создайте Pull Request</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#9-pull-request" class="nav-link">9. Проверьте созданный Pull Request</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -98,37 +98,37 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="pull-request-arc">Инструкция по внесению изменений в файлы и созданию Pull Request в Arc</h1>
-<h2 id="1"><strong>1.Обновите локальный репозиторий</strong></h2>
+<h1 id="pull-request">Инструкция по внесению изменений в файлы и созданию Pull Request</h1>
+<h2 id="1"><strong>1. Обновите локальный репозиторий</strong></h2>
 <p>Прежде чем начинать работу, убедитесь, что ваша локальная копия репозитория актуальна. Для этого выполните команду:</p>
 <p><code>arc pull</code></p>
 <p>Эта команда синхронизирует вашу локальную ветку с удалённым репозиторием, получая последние изменения.</p>
-<h2 id="2"><strong>2.Создайте новую ветку</strong></h2>
+<h2 id="2"><strong>2. Создайте новую ветку</strong></h2>
 <p>Чтобы сохранить основную ветку неизменной, создайте отдельную ветку для своих изменений:</p>
 <p><code>arc branch &lt;имя_новой_ветки&gt;</code></p>
 <p>Ппример:</p>
 <p><code>arc branch feature/add-login-page</code></p>
-<h2 id="3"><strong>3.Переключитесь на созданную ветку</strong></h2>
+<h2 id="3"><strong>3. Переключитесь на созданную ветку</strong></h2>
 <p>Для работы с новой веткой переключитесь на неё:</p>
 <p><code>arc checkout &lt;имя_новой_ветки&gt;</code></p>
 <p>Пример:</p>
 <p><code>arc checkout feature/add-login-page</code></p>
-<h2 id="4"><strong>4.Внесите изменения</strong></h2>
+<h2 id="4"><strong>4. Внесите изменения</strong></h2>
 <p>Откройте необходимые файлы в текстовом редакторе или IDE. После завершения правок сохраните изменения. Убедитесь, что изменения соответствуют требованиям проекта и проходят локальные тесты, если это требуется.</p>
-<h2 id="5"><strong>5.Добавьте изменённые файлы в индекс</strong></h2>
+<h2 id="5"><strong>5. Добавьте изменённые файлы в индекс</strong></h2>
 <p>После внесения изменений добавьте файлы в индекс с помощью команды:</p>
 <p><code>arc add &lt;имя_файла&gt;</code></p>
 <p>Если вы хотите добавить все изменённые файлы, выполните:</p>
 <p><code>arc add</code></p>
-<h2 id="6"><strong>6.Создайте коммит</strong></h2>
+<h2 id="6"><strong>6. Создайте коммит</strong></h2>
 <p>Создайте коммит с описанием внесённых изменений:</p>
 <p><code>arc commit -m "Краткое описание изменений"</code></p>
 <p>Описание должно быть информативным и объяснять, какие изменения были внесены.</p>
-<h2 id="7"><strong>7.Отправьте ветку на удалённый репозиторий</strong></h2>
+<h2 id="7"><strong>7. Отправьте ветку на удалённый репозиторий</strong></h2>
 <p>Для публикации вашей ветки выполните команду:</p>
 <p><code>arc push</code></p>
 <p>Убедитесь, что ветка успешно отправлена на сервер.</p>
-<h2 id="8-pull-request"><strong>8.Создайте Pull Request</strong></h2>
+<h2 id="8-pull-request"><strong>8. Создайте Pull Request</strong></h2>
 <p>После отправки ветки создайте Pull Request для объединения изменений. Используйте команду:</p>
 <p><code>arc pr create -m "Описание Pull Request"</code></p>
 <p>Описание PR должно включать:</p>
@@ -143,7 +143,7 @@
 <p>Информацию о том, как тестировать или проверять эти изменения.</p>
 </li>
 </ul>
-<h2 id="9-pull-request"><strong>9.*Проверьте созданный Pull Request</strong></h2>
+<h2 id="9-pull-request"><strong>9. Проверьте созданный Pull Request</strong></h2>
 <p>Перейдите в веб-интерфейс системы контроля версий, чтобы убедиться, что PR успешно создан. </p>
 <p>Проверьте:</p>
 <ul>
@@ -239,5 +239,5 @@
 
 <!--
 MkDocs version : 1.6.1
-Build Date UTC : 2025-05-15 15:58:10.708219+00:00
+Build Date UTC : 2025-05-15 16:03:32.615673+00:00
 -->
